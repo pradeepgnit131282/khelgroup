@@ -1,0 +1,306 @@
+* {margin:0;padding:0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+img {-webkit-transition: all 0.3s 0s ease-in-out;
+    -moz-transition: all 0.3s 0s ease-in-out;
+    -o-transition: all 0.3s 0s ease-in-out;
+    transition: all 0.3s 0s ease-in-out;}
+header, footer, nav, section, aside {display:block;}
+body {font-family:calibri, Arial;font-size:14px;line-height:18px;color:#666666;font-weight:400;background:#edf2f6;}
+html body {background:#f9f9f9;}
+*{outline:none;}
+ul, li {list-style:none;}
+input, select, textarea {font-family:calibri, Arial;font-size:13px;color:#212121;}
+label {font-weight:normal;}
+.fleft {float:left;}
+.fright {float:right;}
+a{color:#017dff;}
+a:focus, :focus {outline:none;box-shadow:none!important;text-decoration:none;}
+button::-moz-focus-inner {border: 0;}
+a {text-decoration:none;}
+img {max-width:100%;border:none;}
+.clr {clear:both;overflow:hidden;height:0;line-height:0;font-size:0;display:block;width:100%;}
+input[type="button"], input[type="submit"], button {cursor:pointer;}
+
+.wrapper {float:left;width:100%;}
+.siteWidth {max-width:100%;margin:0 auto;}
+/* Header Css Start Here */
+.header {width:100%;float:left;background:#404257;box-shadow:1px 0 8px rgba(0,0,0,.4);position:relative;}
+.logo {float:left;margin:0;}
+.logo img{display:block;}
+
+.searchBox {float:left;width:35%;position:relative;height:69px;background:#4a4c63;padding-top:14px;margin-left:15%;}
+.searchBox .form-control {background:none;width:90%;border:none;padding:10px 23px;height:40px;box-shadow:none;}
+.btn-default.searchBtn {background:url(../images/search-icon.png) no-repeat 0 0;position:absolute;top:23px;right:20px;width:21px;height:22px;border:none;text-indent:-9000px;}
+
+.headerRight {float:right;margin-top:12px;}
+.headerSearch {float:left;width:410px;margin-right:70px;}
+.header nav {float:left;}
+.header ul {float:left;width:100%;margin-bottom:0;}
+.header ul li {float:left;margin-left:10px;position:relative;}
+.header ul li a {transition:all .3s ease-in-out;display:block;border:0px solid #9c83bb;color:#FFFFFF;padding:10px 15px;border-radius:20px;line-height:18px;}
+.header ul li.loginBtn a {background:url(../images/login.png) no-repeat 10px 10px;color:#FFFFFF;padding:10px 34px; margin-left:30px;text-transform:uppercase;}
+.header ul li.loginBtn a:hover{color:#FFFFFF;}
+.header ul li.signupBtn a {background:url(../images/signup.png) no-repeat 10px 10px;color:#FFFFFF;padding:10px 34px;text-transform:uppercase;}
+.header ul li.signupBtn a:hover{color:#FFFFFF;}
+.header ul li a:hover {text-decoration:none; color:#cdbbe2;}
+.header ul.dropdown-menu li a {color:#333333;}
+.headerRight nav ul li a span.menuLink {display:none;}
+.headerRight .badge {background:#fe5e3c;color:#FFFFFF;position:absolute;right:0;top:0;}
+.header ul.dropdown-menu li, .header .headerBottom ul li ul li {width:100%;margin:0;}
+.header ul.dropdown-menu li a, .header .headerBottom ul li ul li a {border-radius:0;}
+.header ul.dropdown-menu li a:hover, .header .headerBottom ul li ul li a:hover {padding:10px 15px;background:#f1f1f1;}
+
+.headerBottom {float:left;width:100%;background:#FFFFFF;}
+.headerBottom nav {float:right;}
+.header .headerBottom ul li a {color:#404257;}
+.header .headerBottom ul li:hover .submenu {display:block;}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.header .headerBottom ul li:hover .dropdown-content {
+    display: block;
+}
+
+.userBox {float:right;margin-left:30px;}
+.userBox a {padding:0;color:#FFFFFF;display:block;}
+.userBox a:hover {padding:0;color:#FFFFFF;}
+.userBox img {border-radius:50%;margin-right:10px;width:45px;}
+.userBox strong {font-size:15px;padding-top:0;padding-right:10px;font-weight:300;line-height:18px;display:inline-block;vertical-align:middle;}
+.userBox strong span {display:block;font-weight:300;font-size:12px;text-transform:uppercase;color:#878ba8;}
+/* Header Css End Here */
+
+
+
+/***************Profile Page CSS Start here****************/
+.navbar-inverse{background-color:#28242f; border-radius:0; box-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);}
+.navbar-nav{float:right;}
+.navbar-inverse .navbar-nav>li>a {color: #ccc7d4;padding: 15px 30px;}
+.navbar-inverse .navbar-nav>li:last-child a{background: #4765a9;display: block;border-radius: 40px;padding: 10px 20px;margin: 5px 0;color: #fff;}
+.omb_login{background:rgba(198, 58, 47, 0.7); width:35%; padding:20px 40px 90px; margin:40px auto 0 60%; box-shadow:0 16px 24px 8px rgba(0,0,0,0.2), 0 6px 20px 10px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.2); position:relative;}
+
+@media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+}
+
+.omb_login .omb_authTitle {text-align: center;line-height: 300%;font-weight:300;text-transform:uppercase;color:#fff;}
+
+.omb_login .omb_socialButtons a {
+	color: white; // In yourUse @body-bg
+	opacity:0.9;
+	padding: 5px 0;
+	box-shadow:0px 3px 1px -1px #5d302b;
+}
+.omb_login .omb_socialButtons a:hover {
+    color: white;
+	opacity:1;
+}
+.omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
+.omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
+.omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
+
+
+.omb_login .omb_loginOr {position: relative;font-size: 1.5em;color: #aaa;margin-top: 0;margin-bottom: 1em;padding-top: 10px;padding-bottom: 0.5em;}
+.omb_login .omb_loginOr .omb_hrOr {background-color: #b76a65;height: 1px;margin-top: 0px !important;margin-bottom: 0px !important;}
+.omb_login .omb_loginOr .omb_spanOr {display: block;position: absolute;left: 50%;top: -0.6em;margin-left: -1em;background-color: white;
+width: 2em;text-align: center;background: #a04237 ;color: #b76a65;font-weight: 300;font-style: italic;}
+
+.omb_login .omb_loginForm .input-group.i {width: 2em;}
+.omb_login .omb_loginForm  .help-block {color: red;}
+@media (min-width: 768px) {
+    .omb_login .omb_forgotPwd {
+        text-align: right;
+		margin-top:10px;
+ 	}
+}
+.input-group-addon{ background:none; border:none; border-bottom:solid #fff 1px; border-radius:0;}
+.input-group input{background:none; border:none; border-bottom:solid #fff 1px;color:#fff;  border-radius:0;}
+.input-group input:focus{border-bottom:solid #fff 1px; box-shadow:none;}
+.input-group{margin:0 0 25px 0;}
+.btn-primary{background: #8ec15b;border: solid #9dd267 1px; transition:all 0.3s ease-in-out;}
+.omb_login .checkbox{left:22px; color:#fff; font-weight:300;}
+.omb_forgotPwd a{color:#2196F3;}
+.omb_socialButtons .hidden-xs{font-size:12px;}
+.new-account{background:#6f2a2a; padding:16px 40px; margin:10px 0 0 0; position:absolute; bottom:0; left:0; width:100%; color:#fff; line-height:20px;}
+.new-account span{display:inline-block; padding:6px 0; color:#ffc1a6;}
+.new-account a{float:right; background:none; border:solid #d48a88 1px; border-radius:20px; padding:6px 20px; color:#fff; font-weight:400; text-transform:uppercase;}
+
+
+.innerpage {background:#eeeeee;}
+.innerpage .navbar-inverse {background:#FFFFFF;border-color:#FFFFFF;}
+.innerpage .navbar-inverse .navbar-nav > li > a {color:#7c7c7c;}
+.innerpage .navbar-inverse .navbar-nav > li > a:hover {color:#000000;}
+.innerpage .navbar-inverse .navbar-nav > li:last-child a {color:#FFFFFF;background:#f57843;}
+.innerpage .navbar-inverse .navbar-nav > li:last-child a:hover {background:#e16937;}
+
+
+.omb_profile{background:#FFFFFF;width:50%; padding:35px 70px; margin:40px auto 0 auto;box-shadow:0 16px 24px 8px rgba(0,0,0,0.2), 0 6px 20px 10px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.2); position:relative;}
+.omb_profile h5 {font-size:12px;color:#2c2c2c;font-weight:500;text-transform:uppercase;margin-bottom:30px;}
+.heading_box {float:left;width:100%;border-bottom:2px solid #f2f2f2;padding-bottom:23px;margin-bottom:20px;}
+.heading_box h3 {float:left;font-size:24px;color:#2b2b2b;}
+.heading_box a {float:right;margin-left:5px;}
+.add_btn {border:1px solid #0893ff;color:#2ca3ff;}
+.edit_btn {border:1px solid #f57843;background:#f57843;color:#FFFFFF;}
+.step_box {margin-bottom:30px;float:left;width:80%;position:relative;margin-left:10%;}
+.step_box:before {content:"";position:absolute;top:11px;border-top:2px solid #e8e8e8;left:4.5%;width:85%;}
+.step_box ul {text-align:center;margin:0;}
+.step_box ul li {text-transform:uppercase;font-weight:500;text-align:center;display:inline-block;}
+.step_box ul li:first-child {float:left;}
+.step_box ul li:last-child {float:right;}
+.step_box ul li span {display:block;color:#fb9f78;color:#d8d8d8;position:relative;padding-top:30px;line-height:16px;}
+.step_box ul li span:after {content:"";position:absolute;top:0;border-radius:50%;width:23px;height:23px;background:#d8d8d8;left:50%;margin-left:-11px;}
+.step_box ul li span:before {content:"";position:absolute;top:-9px;border-radius:50%;width:42px;height:42px;background:#FFFFFF;left:50%;margin-left:-21px;}
+.step_box ul li.active_step span:after {background:#fb9f78;}
+.step_box ul li.active_step span {color:#fb9f78;}
+.form_box {float:left;width:100%;}
+.form_box label {font-weight:normal;display:block;color:#a0a0a0;}
+.form_box .form-control {border:1px solid #989898;width:100%;height:43px;}
+.form_box .input-group {display:block;width:100%;margin-bottom:18px;float:left;}
+.nxt_btn {float:right;border-radius:20px;background:#00ae55;color:#FFFFFF;font-weight:500;text-transform:uppercase;padding:8px 40px;border-bottom:2px solid #008441;}
+/***************Profile Page CSS Start here****************/
+
+
+
+
+/* Container Css Start Here */
+.containerMain {float:left;width:100%;padding:22px 0;}
+.containerLeft {}
+.containerBox {margin-bottom:23px;border-radius:6px;border:1px solid #e7e7e7;background:#FFFFFF;float:left;width:100%;}
+.profileBox {background:#7554bc;padding:25px;}
+.profilePic {margin-bottom:15px;}
+.profilePic img {display:block;width:53px;border-radius:50%;border:2px solid #FFFFFF;}
+.profileTxt {color:#FFFFFF;}
+.profileTxt span {display:block;}
+.locationTxt {font-size:18px;margin-bottom:0;}
+.profileTxt h3 {margin-top:0;margin-bottom:25px;}
+.intrestTxt {font-size:18px;color:#cab4fa;}
+
+.teamList {}
+.teamList h3 {text-transform:uppercase;margin:0;color:#040404;font-size:16px;font-weight:bold;padding:20px 25px;}
+.teamList ul {}
+.teamList ul li {border-top:1px solid #efefef;}
+.teamList ul li a {display:block;padding:15px 17px;color:#333333;font-weight:bold;text-transform:uppercase;background:url(../images/star-gray.png) no-repeat 94% center;}
+.teamList ul li a img {border-radius:50%;margin-right:10px;}
+.teamList ul li a:hover, .teamList ul li a.active {background:url(../images/star-color.png) no-repeat 94% center;text-decoration:none;}
+
+.poststatusBox {float:left;width:100%;}
+.poststatusBox .postBox {position:relative;padding:25px;}
+.poststatusBox .postBox textarea {border:none;background:none;resize:none;box-shadow:none;padding-left:60px;height:109px;}
+.postPic {position:absolute;top:25px;left:25px;}
+.postPic img {width:38px;border:2px solid #FFFFFF;border-radius:50%;}
+.postButtons {padding:11px 25px;float:left;width:100%;background:#fafbfd;border-top:1px solid #edf2f6;}
+.postButtons ul {float:left;margin:4px 0 0 0;}
+.postButtons ul li {display:inline-block;padding:5px 0;margin-right:10px;}
+.btn.siteButton {background:#fe5e3a;border:none;color:#FFFFFF;text-transform:uppercase;font-weight:bold;border-radius:3px;padding:8px 20px;font-size:16px;}
+
+.post {float:left;width:100%;}
+.postItem {padding:25px;}
+.itemProfile {margin-bottom:20px;float:left;width:100%;}
+.itemProfile img {border-radius:50px;width:38px;float:left;}
+.itemProfile .itemProfileTxt {float:left;margin-left:10px;color:#9ba0c0;}
+.itemProfile .itemProfileTxt strong {color:#131313;}
+.itemProfile .itemProfileTxt a {color:#fe5e3a;font-weight:bold;}
+.itemProfile .itemProfileTxt span.time {display:block;font-size:12px;color:#a2a5b8;font-weight:bold;}
+.postContent {float:left;width:100%;font-weight:bold;color:#a39fac;padding-bottom:30px;}
+.postContent p {margin-bottom:20px;}
+.postBottom {float:left;width:100%;border-top:1px solid #e5ecf4;padding:15px 0 0;}
+.postBottomLeft {float:left;}
+.postBottomRight {float:right;margin-top:4px;}
+.postBottomRight a {line-height:18px;color:#878ca9;padding:0 0 0 30px;float:left;margin-left:15px;height:22px;}
+.postBottomRight a:hover {color:#000000;}
+.postBottomRight a.msgLink {background:url(../images/msg-icon.png) no-repeat 0 0;}
+.postBottomRight a.arrowLink {background:url(../images/arrow-icon.png) no-repeat 0 0;}
+.likes {background:url(../images/like-icon.png) no-repeat 0 0;line-height:18px;padding-left:27px;color:#878ca9;height:20px;margin-top:4px;}
+.likes {float:left;}
+.likesDesc {float:left;margin-left:15px;font-size:13px;line-height:14px;}
+.likesDesc img {float:left;margin-right:10px;}
+.likeTxt {float:left;}
+.likesDesc a {color:#898daa;}
+.likesDesc a span {color:#525568;}
+
+.blueBox {background:#4a4c63;border:none;}
+.blueBox h3 {margin:0;padding:20px 25px;color:#FFFFFF;text-transform:uppercase;font-weight:bold;font-size:16px;border-bottom:1px solid #56586f;}
+.blueBoxTxt {padding:10px 25px;color:#8c8792;}
+.blueBoxBottom {padding:15px 25px;border-top:1px solid #56586f;}
+.blueBoxBottom a {color:#39a9ff;font-size:16px;}
+.blueBoxBottom a:hover {color:#FFFFFF;}
+.blueBoxTxt p {margin-bottom:15px;line-height:18px;}
+.blueBoxTxt p span {color:#a7a9b8;}
+.blueBoxTxt p span.score, .score {color:#e9dff4;}
+.score strong {color:#fe5e3a;}
+
+.peopleList {}
+.peopleList h3 {text-transform:uppercase;margin:0;color:#040404;font-size:16px;font-weight:bold;padding:20px 25px;}
+.peopleList ul {}
+.peopleList ul li {border-top:1px solid #efefef;float:left;width:100%;}
+.peopleList ul li h5 {margin:0;float:left;font-weight:bold;font-size:14px;text-transform:none;}
+.peopleList ul li h5 span {display:block;font-size:12px;color:#878fa6;font-weight:normal;line-height:20px;}
+.peopleList ul li a {display:block;padding:25px 17px;color:#333333;font-weight:bold;text-transform:uppercase;float:left;width:100%;}
+.peopleList ul li a img.peoplePic {border-radius:50%;margin-right:10px;width:35px;float:left;margin-right:10px;}
+.peopleList ul li span.rightIcon {float:right;margin-top:-3px;}
+.peopleList ul li a:hover, .peopleList ul li a.active {background:url(../images/star-color.png) no-repeat 94% center;text-decoration:none;}
+
+.newsBox {}
+.newsBox h3 {text-transform:uppercase;margin:0;color:#040404;font-size:16px;font-weight:bold;padding:20px 25px;}
+.newsDesc {border-top:1px solid #efefef;float:left;width:100%;padding:20px 25px;}
+.newsTime {background:url(../images/time-icon.png) no-repeat 0 center;color:#515368;display:block;margin-bottom:25px;padding-left:18px;}
+.newsDesc h4 {margin:0 0 12px 0;font-weight:bold;font-size:16px;}
+.newsDesc p {color:#bdc1cd;margin-bottom:15px;}
+.newsLocation {background:url(../images/location-icon.png) no-repeat 0 0;padding-left:22px;display:block;color:#bdc1cd;}
+.overlay {position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);z-index:6;display:none;}
+.overlay, .subMenu {
+	-webkit-transition: none;
+    -moz-transition:none;
+    -o-transition:none;
+    transition:none;
+}
+
+/* Container Css End Here */
+
+
+
+
+
+/***********************Scoreboard css start here*****************************/
+.cb-bg-gray{background:#ccc; display:table; width:100%; padding:5px;}
+.cb-player{padding:8px 5px; border-bottom:solid #efefef 1px; display:table; width:100%;}
+.cb-extras{padding:8px 5px;    display: table;width: 100%;border-bottom:solid #efefef 1px;}
+.cb-total, .cb-detail{padding:8px 5px;    display: table;width: 100%;border-bottom:solid #efefef 1px;}
+
+.rca-border-bottom {border-bottom: 1px solid #E6E6E6; }
+
+.rca-batting-score input[type="text"]{border: solid #e2dfdf 1px;padding:5px 3px;font-size: 12px;color: #333333; width:100%;}
+/*********************************Scoreboard CSS end here*************************/
+
+/************Team CSS start here********************/
+.cb-team img{display:inline-block; margin:10px 10px 10px 0;}
+.cb-team .team-tile{border-bottom:solid #efefef 1px; display: table; width:100%;}
+.cb-team h2{display: inline-block;}
+.cb-team h2 a{font-size:14px;}
+.cb-team .heading{background:#efefef; padding:10px; display: table; width:100%;}
+.cb-team ul{display: table;
+margin: 0 0 25px 0;
+border-bottom: solid #efefef 1px;
+padding: 0 0 25px 0;
+}
+
+
+
+/* Footer Css Start Here */
+.footer {float:left;width:100%;position:relative;padding:20px 0;color:#b1a7bc;font-size:13px;background:#404257;font-weight:600;}
+.copyright {float:left;width:100%;text-align:center;}
+/* Footer Css End Here */

@@ -1,0 +1,179 @@
+﻿@{
+    ViewBag.Title = "ViewTeam";
+}
+@model Khel.DataContract.CommonUser
+
+<!-- Container Part Start Here -->
+<div class="containerMain">    
+    <div class="container">
+        <!-- Left Container Part Start Here -->
+        <!-- Left Container Part End Here -->
+        <div class="containerRight col-md-9">
+            <div class="rca-batting-score rca-padding">
+                <div class="cb-title">
+                    <h2>Team </h2>
+                </div>
+                <div class="cb-team">                 
+        @foreach (var person in Model.GetTeamYouMayBeInterested)
+                     {   
+                            <div class="team-tile">
+                                @if(person.TeamId%2 == 0 ){
+                                   
+                                <div class="col-sm-6">
+                                    <img src="http://i.cricketcb.com/i/stats/flags/web/official_flags/team_61.png" />
+                                    <h2><a href="#">@person.TeamName</a></h2>
+                                </div>
+                                }
+                                else
+                                { 
+                                <div class="col-sm-6">
+                                    <img src="http://i.cricketcb.com/i/stats/flags/web/official_flags/team_62.png" />
+                                    <h2><a href="#">@person.TeamName</a></h2>
+                                </div>
+                                }
+                            </div>
+                    }
+
+                    @*<div class="team-tile">
+                        <div class="col-sm-6">
+                            <img src="http://i.cricketcb.com/i/stats/flags/web/official_flags/team_63.png" />
+                            <h2><a href="#">Delhi Daredevils</a></h2>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="http://i.cricketcb.com/i/stats/flags/web/official_flags/team_64.png" />
+                            <h2><a href="#">Delhi Daredevils</a></h2>
+                        </div>
+                    </div>
+
+                    <div class="team-tile">
+                        <div class="col-sm-6">
+                            <img src="http://i.cricketcb.com/i/stats/flags/web/official_flags/team_65.png" />
+                            <h2><a href="#">Delhi Daredevils</a></h2>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="http://i.cricketcb.com/i/stats/flags/web/official_flags/team_61.png" />
+                            <h2><a href="#">Delhi Daredevils</a></h2>
+                        </div>
+                    </div>
+
+                    <div class="team-tile">
+                        <div class="col-sm-6">
+                            <img src="http://i.cricketcb.com/i/stats/flags/web/official_flags/team_61.png" />
+                            <h2><a href="#">Delhi Daredevils</a></h2>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="http://i.cricketcb.com/i/stats/flags/web/official_flags/team_62.png" />
+                            <h2><a href="#">Delhi Daredevils</a></h2>
+                        </div>
+                    </div>
+
+
+                    <div class="team-tile">
+                        <div class="col-sm-6">
+                            <img src="http://i.cricketcb.com/i/stats/flags/web/official_flags/team_63.png" />
+                            <h2><a href="#">Delhi Daredevils</a></h2>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="http://i.cricketcb.com/i/stats/flags/web/official_flags/team_64.png" />
+                            <h2><a href="#">Delhi Daredevils</a></h2>
+                        </div>
+                    </div>
+
+
+                    <div class="team-tile">
+                        <div class="col-sm-6">
+                            <img src="http://i.cricketcb.com/i/stats/flags/web/official_flags/team_65.png" />
+                            <h2><a href="#">Delhi Daredevils</a></h2>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="http://i.cricketcb.com/i/stats/flags/web/official_flags/team_61.png" />
+                            <h2><a href="#">Delhi Daredevils</a></h2>
+                        </div>
+                    </div>
+
+
+                    <div class="team-tile">
+                        <div class="col-sm-6">
+                            <img src="http://i.cricketcb.com/i/stats/flags/web/official_flags/team_65.png" />
+                            <h2><a href="#">Delhi Daredevils</a></h2>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="http://i.cricketcb.com/i/stats/flags/web/official_flags/team_61.png" />
+                            <h2><a href="#">Delhi Daredevils</a></h2>
+                        </div>
+                    </div>*@
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <!--------------Second Innings----------------------->
+
+
+
+
+
+        </div>
+
+
+        <!-- Right Container Part Start Here -->
+        <div class="containerRight col-md-3">
+            <div class="blueBox containerBox">
+                <h3>Live Score</h3>
+                <div class="blueBoxTxt">
+                    <p><span>May 19-22, 2017 -</span> <br>at Sophia Gardens, Cardiff</p>
+                    <p class="score">Nottinghamshire <strong>448</strong> <br>Glamorgan <strong>187 (62.3 ov)</strong></p>
+                    <p>Stumps - <br><span class="score">Glamorgan trail by 261 runs with 0 <br>wickets remaining in the 1st innings</span></p>
+                </div>
+                <div class="blueBoxBottom"><a href="#">Full Scoreboard</a></div>
+            </div>
+
+            <div class="peopleList containerBox">
+                <h3>People You May Know</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/user-pic.jpg" class="peoplePic" alt="">
+                            <h5>Francine Smith<span>8 Friends in common</span></h5>
+                            <span class="rightIcon"><img src="images/people-icon.png" alt=""></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/user-pic.jpg" class="peoplePic" alt="">
+                            <h5>Hugh Wilson<span>8 Friends in common</span></h5>
+                            <span class="rightIcon"><img src="images/people-icon.png" alt=""></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/user-pic.jpg" class="peoplePic" alt="">
+                            <h5>Karen Masters<span>8 Friends in common</span></h5>
+                            <span class="rightIcon"><img src="images/people-icon.png" alt=""></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="newsBox containerBox">
+                <h3>Latest News</h3>
+                <div class="newsDesc">
+                    <span class="newsTime">9:00 am</span>
+                    <h4>Breakfast at the agency</h4>
+                    <p>Hi Guys! I propose to go a little earlier at the agency to have breakfast and talk a little more about the new design project we have been working on. Cheers!</p>
+                    <span class="newsLocation">Faridabad</span>
+                </div>
+            </div>
+        </div>
+        <!-- Right Container Part End Here -->
+
+    </div>
+</div>
+<!-- Container Part End Here -->

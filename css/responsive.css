@@ -1,0 +1,50 @@
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+.container {width:100%;}
+.header ul li a {padding-left:21px;padding-right:21px;}
+}
+@media only screen and (max-width: 767px) {
+* {-webkit-transition: all 0.3s 0s ease-in-out;
+    -moz-transition: all 0.3s 0s ease-in-out;
+    -o-transition: all 0.3s 0s ease-in-out;
+    transition: all 0.3s 0s ease-in-out;}
+body, html {overflow:auto;overflow-x:hidden;}
+.menuIcon {display:block;background:url(../images/menu-icon.png) no-repeat center center;width:20px;height:20px;position:absolute;right:10px;top:21px;cursor:pointer;background-size:20px auto;}
+.closeIcon {background:url(../images/menu-icon-active.png) no-repeat center center;width:40px;height:40px;position:relative;right:-10px;top:1px;cursor:pointer;display:block;
+z-index:1;background-size:20px 20px;display:none;}
+.menuIcon.activeIcon {background:#383d7d url(../images/menu-icon-active.png) no-repeat center center;width:45px;height:45px;}
+
+.header {padding-bottom:10px;}
+.logo img {}
+.mobileLinks {display:block;}
+nav#menu {position:absolute;top:0;right:0;width:100%;z-index:3;padding:0;margin:0;display:block;z-index:7;border:0;}
+nav#menu ul {position:absolute;top:0;right:-84%;border:none;width:84%;background:#fe5e3a;border-radius:0;padding-top:0;border-bottom:none;}
+nav#menu ul li {float:left;background:none;border-bottom:1px solid #e44e2d;border-top:1px solid #fd7354;width:100%;font-size:16px;margin:0;border-left:0;position:relative;}
+nav#menu ul li:last-child {border-bottom:none;}
+nav#menu ul li:first-child {border-top:none;}
+nav#menu ul li a {color:#FFFFFF;display:block;border:none;padding:15px;font-size:14px;}
+nav#menu ul li a:hover, nav#menu ul li a.active {color:#FFFFFF;}
+nav#menu ul li.active  {background:#ff713f;font-weight:400;}
+nav#menu ul li.active a {color:#FFFFFF;}
+.header ul li.loginBtn a {background:none; margin:0;}
+.header ul li.signupBtn a{background:none;}
+
+nav#menu ul li .dropdown-content {position:relative;float:left;width:100%;}
+.header .headerBottom ul li:hover .dropdown-content {display:none;}
+nav#menu ul li ul {background:#FFFFFF;position:relative;width:100%;right:0;}
+nav#menu ul li ul li {border:none;border-bottom:1px solid #CCCCCC;} 
+nav#menu ul li ul li a {color:#333333;}
+.dropbtn {background:url(../images/plus-icon.png) no-repeat 94% center;background-size:20px 20px;}
+.dropbtn.active {background:url(../images/minus-icon.png) no-repeat 94% center;background-size:20px 20px;}
+.dropdown-content {-webkit-transition:none;
+    -moz-transition:none;
+    -o-transition:none;
+    transition:none;}
+
+.footer {padding:15px 0 20px;}
+.copyright {text-align:center;}
+.headerRight {width:100%;}
+.header ul li {margin:0;}
+.userBox {margin:0;}
+.header ul li a {padding:10px;}
+.searchBox {display:none;}
+}
